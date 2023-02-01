@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Title } from './Section.styled';
 
 export function Section({ title }) {
   return (
-    <section>
+    <Title>
       <h1>{title}</h1>
-    </section>
+    </Title>
   );
 }
 
-Section.PropTypes = {
+Section.propTypes = {
   title: PropTypes.string.isRequired,
 };
